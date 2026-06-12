@@ -3,7 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Hery Tiana — Portfolio</title>
+<title>Hery Tiana RAZAFINIARIVO — Génie Électromécanique & IoT | Portfolio</title>
+
+<!-- ═══ SEO PRIMAIRE ═══ -->
+<meta name="description" content="Portfolio de Hery Tiana RAZAFINIARIVO, étudiant en Génie Électromécanique et Informatique Industrielle à l'ISPM Madagascar. Spécialisé en IoT, robotique, systèmes embarqués et développement Android.">
+<meta name="keywords" content="Hery Tiana, Natianah, portfolio, électromécanique, informatique industrielle, IoT, robotique, Arduino, ESP8266, ISPM Madagascar, systèmes embarqués">
+<meta name="author" content="Hery Tiana RAZAFINIARIVO">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://natianah.github.io/">
+
+<!-- ═══ OPEN GRAPH (Facebook, WhatsApp, LinkedIn) ═══ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://natianah.github.io/">
+<meta property="og:title" content="Hery Tiana RAZAFINIARIVO — Portfolio Ingénierie">
+<meta property="og:description" content="Étudiant en Génie Électromécanique & Informatique Industrielle à l'ISPM Madagascar. Projets IoT, robotique, systèmes embarqués.">
+<meta property="og:image" content="https://natianah.github.io/profil.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Hery Tiana — Portfolio">
+
+<!-- ═══ TWITTER CARD ═══ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hery Tiana RAZAFINIARIVO — Portfolio Ingénierie">
+<meta name="twitter:description" content="Étudiant en Génie Électromécanique & IoT à l'ISPM Madagascar.">
+<meta name="twitter:image" content="https://natianah.github.io/profil.jpg">
+
+<!-- ═══ FAVICON STYLE iOS ═══ -->
+<!-- Favicon SVG (navigateurs modernes) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%2360a5fa'/><stop offset='100%25' stop-color='%232463eb'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='url(%23g)'/><text y='68' x='50' text-anchor='middle' font-size='52' font-family='system-ui,sans-serif' font-weight='800' fill='white'>HT</text></svg>">
+<!-- Apple Touch Icon (iPhone/iPad home screen) -->
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%2360a5fa'/><stop offset='100%25' stop-color='%232463eb'/></linearGradient></defs><rect width='180' height='180' rx='40' fill='url(%23g)'/><text y='122' x='90' text-anchor='middle' font-size='90' font-family='system-ui,sans-serif' font-weight='800' fill='white'>HT</text></svg>">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="HT Portfolio">
+<!-- Theme color (barre du navigateur sur Android/iOS) -->
+<meta name="theme-color" content="#2463eb">
+<meta name="msapplication-TileColor" content="#2463eb">
+
+<!-- ═══ DONNÉES STRUCTURÉES (Google Rich Results) ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hery Tiana RAZAFINIARIVO",
+  "alternateName": "Natianah",
+  "url": "https://natianah.github.io/",
+  "image": "https://natianah.github.io/profil.jpg",
+  "jobTitle": "Étudiant en Génie Électromécanique et Informatique Industrielle",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "ISPM Madagascar"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Antananarivo",
+    "addressCountry": "MG"
+  },
+  "email": "herytianarazafiniarivo@gmail.com",
+  "telephone": "+261327353371",
+  "knowsAbout": ["IoT", "Robotique", "Systèmes embarqués", "Arduino", "ESP8266", "Python", "C++", "SolidWorks", "AutoCAD", "KiCad"],
+  "knowsLanguage": ["fr", "en", "mg"],
+  "sameAs": ["https://natianah.github.io/"]
+}
+</script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -303,9 +366,12 @@
       <div class="profile-frame">
         <div class="profile-ring"><div class="profile-ring-inner"></div></div>
         <div class="profile-photo-wrap">
-
-            <img src="profil.jpg" alt="Hery Tiana">
-          
+          <!--
+            Pour ta vraie photo : remplace par
+            <img src="ta-photo.jpg" alt="Hery Tiana">
+            et supprime le div .profile-initials
+          -->
+          <div class="profile-initials">HT</div>
         </div>
         <div class="profile-badge">
           <div class="profile-badge-dot"></div>
@@ -411,28 +477,28 @@
         <div class="project-title">Distributeur automatique de boissons</div>
         <p class="project-desc">Système complet avec 3 modes de boisson, sélection via potentiomètre, validation tactile, pompes temporisées, affichage LCD I2C et LEDs d'état.</p>
         <div class="project-tech"><span class="tag">Arduino</span><span class="tag">LCD I2C</span><span class="tag">C++</span></div>
-        <a href="#" class="project-link">Voir le projet →</a>
+        <a href="LIEN_DRIVE_1" target="_blank" rel="noopener" class="project-link">📄 Voir le PDF →</a>
       </div>
       <div class="project-card glass-strong reveal" style="transition-delay:0.1s">
         <div class="project-tag">IoT Mobile</div>
         <div class="project-title">Smart Juice — App Android IoT</div>
         <p class="project-desc">Application Android de contrôle de machine via Bluetooth HC-05 : interface dark mode, contrôle vocal et manuel, historique utilisateur.</p>
         <div class="project-tech"><span class="tag">AIDE</span><span class="tag">HC-05</span><span class="tag">Android</span></div>
-        <a href="#" class="project-link">Voir le projet →</a>
+        <a href="LIEN_DRIVE_2" target="_blank" rel="noopener" class="project-link">📄 Voir le PDF →</a>
       </div>
       <div class="project-card glass-strong reveal" style="transition-delay:0.2s">
         <div class="project-tag">Robotique</div>
         <div class="project-title">Bras robotique 6 DOF</div>
         <p class="project-desc">Bras articulé à 6 servomoteurs et pince de manipulation, contrôlé via application mobile. Expérimentation robotique et contrôle multi-axes.</p>
         <div class="project-tech"><span class="tag">Arduino</span><span class="tag">Servos</span><span class="tag">Mobile</span></div>
-        <a href="#" class="project-link">Voir le projet →</a>
+        <a href="LIEN_DRIVE_3" target="_blank" rel="noopener" class="project-link">📄 Voir le PDF →</a>
       </div>
       <div class="project-card glass-strong reveal" style="transition-delay:0.3s">
         <div class="project-tag">Maison connectée</div>
         <div class="project-title">Gestion électrique IoT domestique</div>
         <p class="project-desc">Système intelligent connecté via ESP8266 WiFi : contrôle d'appareils par relais, surveillance de tension et température, supervision à distance.</p>
         <div class="project-tech"><span class="tag">ESP8266</span><span class="tag">WiFi</span><span class="tag">ZMPT101B</span></div>
-        <a href="#" class="project-link">Voir le projet →</a>
+        <a href="LIEN_DRIVE_4" target="_blank" rel="noopener" class="project-link">📄 Voir le PDF →</a>
       </div>
     </div>
   </section>
