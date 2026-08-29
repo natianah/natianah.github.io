@@ -5,41 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Hery Tiana RAZAFINIARIVO — Génie Électromécanique & IoT | Portfolio</title>
 
-<!-- ═══ SEO PRIMAIRE ═══ -->
 <meta name="description" content="Portfolio de Hery Tiana RAZAFINIARIVO, étudiant en Génie Électromécanique et Informatique Industrielle à l'ISPM Madagascar. Spécialisé en IoT, robotique, systèmes embarqués et développement Android.">
 <meta name="keywords" content="Hery Tiana, Natianah, portfolio, électromécanique, informatique industrielle, IoT, robotique, Arduino, ESP8266, ISPM Madagascar, systèmes embarqués">
 <meta name="author" content="Hery Tiana RAZAFINIARIVO">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://natianah.github.io/">
 
-<!-- ═══ OPEN GRAPH ═══ -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://natianah.github.io/">
 <meta property="og:title" content="Hery Tiana RAZAFINIARIVO — Portfolio Ingénierie">
 <meta property="og:description" content="Étudiant en Génie Électromécanique & Informatique Industrielle à l'ISPM Madagascar. Projets IoT, robotique, systèmes embarqués.">
-<meta property="og:image" content="https://natianah.github.io/profil.jpg">
+<meta property="og:image" content="https://natianah.github.io/assets/profil.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Hery Tiana — Portfolio">
 
-<!-- ═══ TWITTER CARD ═══ -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Hery Tiana RAZAFINIARIVO — Portfolio Ingénierie">
 <meta name="twitter:description" content="Étudiant en Génie Électromécanique & IoT à l'ISPM Madagascar.">
-<meta name="twitter:image" content="https://natianah.github.io/profil.jpg">
+<meta name="twitter:image" content="https://natianah.github.io/assets/profil.jpg">
 
-<!-- ═══ FAVICON ═══ -->
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="alternate icon" type="image/png" href="profil.jpg">
-<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="alternate icon" type="image/png" href="assets/profil.jpg">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="HT Portfolio">
 <meta name="theme-color" content="#2463eb">
 <meta name="msapplication-TileColor" content="#2463eb">
 
-<!-- ═══ DONNÉES STRUCTURÉES ═══ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -47,7 +42,7 @@
   "name": "Hery Tiana RAZAFINIARIVO",
   "alternateName": "Natianah",
   "url": "https://natianah.github.io/",
-  "image": "https://natianah.github.io/profil.jpg",
+  "image": "https://natianah.github.io/assets/profil.jpg",
   "jobTitle": "Étudiant en Génie Électromécanique et Informatique Industrielle",
   "worksFor": { "@type": "Organization", "name": "ISPM Madagascar" },
   "address": { "@type": "PostalAddress", "addressLocality": "Antananarivo", "addressCountry": "MG" },
@@ -59,319 +54,31 @@
 }
 </script>
 
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  :root {
-    --glass-bg: rgba(255,255,255,0.18);
-    --glass-bg-strong: rgba(255,255,255,0.28);
-    --glass-border: rgba(255,255,255,0.45);
-    --glass-shadow: 0 8px 32px rgba(31,38,135,0.13);
-    --text-primary: #0f1923;
-    --text-secondary: #3d5166;
-    --text-muted: #6b88a0;
-    --accent: #2463eb;
-    --radius-md: 16px;
-    --radius-lg: 24px;
-    --radius-xl: 32px;
-    --section-pad-v: clamp(60px, 10vw, 110px);
-    --section-pad-h: clamp(16px, 5vw, 40px);
-    --max-w: 1060px;
-    --bg-grad: linear-gradient(135deg, #c8daf6 0%, #e8f0fe 30%, #f4f8ff 60%, #dce9f8 100%);
-    --body-bg: transparent;
-    --body-color: var(--text-primary);
-    --nav-bg: rgba(255,255,255,0.22);
-  }
-
-  /* ── MODE SOMBRE ── */
-  [data-theme="dark"] {
-    --glass-bg: rgba(30,41,59,0.45);
-    --glass-bg-strong: rgba(30,41,59,0.6);
-    --glass-border: rgba(148,163,184,0.25);
-    --glass-shadow: 0 8px 32px rgba(0,0,0,0.35);
-    --text-primary: #f1f5f9;
-    --text-secondary: #cbd5e1;
-    --text-muted: #94a3b8;
-    --accent: #60a5fa;
-    --bg-grad: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #1e2745 60%, #111827 100%);
-    --nav-bg: rgba(15,23,42,0.55);
-  }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background: var(--bg-grad);
-    min-height: 100vh;
-    color: var(--text-primary);
-    overflow-x: hidden;
-    transition: background 0.4s ease, color 0.4s ease;
-  }
-
-  /* ── BLOBS ── */
-  .bg-blob { position: fixed; border-radius: 50%; filter: blur(80px); opacity: 0.35; pointer-events: none; z-index: 0; transition: opacity 0.4s; }
-  [data-theme="dark"] .bg-blob { opacity: 0.25; }
-  .blob1 { width: clamp(200px,50vw,500px); height: clamp(200px,50vw,500px); background: radial-gradient(circle, #93c5fd, #3b82f6); top: -100px; left: -100px; animation: float1 12s ease-in-out infinite; }
-  .blob2 { width: clamp(180px,40vw,400px); height: clamp(180px,40vw,400px); background: radial-gradient(circle, #a5b4fc, #6366f1); bottom: 100px; right: -80px; animation: float2 15s ease-in-out infinite; }
-  .blob3 { width: clamp(150px,30vw,300px); height: clamp(150px,30vw,300px); background: radial-gradient(circle, #bfdbfe, #60a5fa); top: 50%; left: 40%; animation: float3 10s ease-in-out infinite; }
-
-  @keyframes float1 { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(40px,30px) scale(1.08)} }
-  @keyframes float2 { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(-30px,-40px) scale(1.05)} }
-  @keyframes float3 { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(20px,-20px) scale(0.95)} }
-
-  /* ── GLASS ── */
-  .glass { background: var(--glass-bg); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow), inset 0 1px 0 rgba(255,255,255,0.6); transition: background 0.4s, border 0.4s; }
-  [data-theme="dark"] .glass { box-shadow: var(--glass-shadow), inset 0 1px 0 rgba(255,255,255,0.06); }
-  .glass-strong { background: var(--glass-bg-strong); backdrop-filter: blur(30px) saturate(200%); -webkit-backdrop-filter: blur(30px) saturate(200%); border: 1px solid rgba(255,255,255,0.55); box-shadow: 0 12px 48px rgba(36,99,235,0.12), inset 0 1px 0 rgba(255,255,255,0.7); transition: background 0.4s, border 0.4s; }
-  [data-theme="dark"] .glass-strong { border-color: rgba(148,163,184,0.3); box-shadow: 0 12px 48px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05); }
-
-  /* ── NAV ── */
-  nav {
-    position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
-    z-index: 100; border-radius: 50px;
-    padding: 10px clamp(16px,4vw,28px);
-    display: flex; align-items: center; gap: clamp(14px,3vw,32px);
-    background: var(--nav-bg); backdrop-filter: blur(24px) saturate(180%); -webkit-backdrop-filter: blur(24px) saturate(180%);
-    border: 1px solid var(--glass-border);
-    box-shadow: 0 4px 24px rgba(36,99,235,0.10), inset 0 1px 0 rgba(255,255,255,0.65);
-    max-width: calc(100vw - 32px); width: max-content;
-    transition: background 0.4s, border 0.4s;
-  }
-  .nav-brand { font-weight: 700; font-size: clamp(13px,2vw,15px); color: var(--accent); letter-spacing: -0.3px; white-space: nowrap; }
-  .nav-links { display: flex; gap: clamp(12px,2vw,24px); align-items: center; }
-  .nav-links a { font-size: clamp(12px,1.5vw,14px); color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: color 0.2s; white-space: nowrap; }
-  .nav-links a:hover { color: var(--accent); }
-
-  /* Toggle thème */
-  .theme-toggle {
-    width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--glass-border);
-    background: rgba(255,255,255,0.25); backdrop-filter: blur(10px);
-    display: flex; align-items: center; justify-content: center; cursor: pointer;
-    font-size: 16px; flex-shrink: 0; transition: transform 0.2s, background 0.3s;
-  }
-  .theme-toggle:hover { transform: scale(1.1); }
-  .theme-toggle:active { transform: scale(0.95); }
-
-  /* Hamburger */
-  .nav-hamburger {
-    display: none; flex-direction: column; gap: 5px; cursor: pointer;
-    width: 24px; height: 18px; justify-content: center; flex-shrink: 0;
-  }
-  .nav-hamburger span { display: block; width: 100%; height: 2px; background: var(--text-primary); border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
-  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
-  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-  .mobile-menu {
-    position: fixed; top: 70px; left: 50%; transform: translateX(-50%) translateY(-12px);
-    z-index: 99; width: calc(100vw - 32px); max-width: 320px;
-    background: var(--nav-bg); backdrop-filter: blur(24px) saturate(180%); -webkit-backdrop-filter: blur(24px) saturate(180%);
-    border: 1px solid var(--glass-border); border-radius: 24px;
-    padding: 20px; display: flex; flex-direction: column; gap: 14px;
-    box-shadow: 0 12px 40px rgba(36,99,235,0.18);
-    opacity: 0; pointer-events: none; transition: opacity 0.25s, transform 0.25s;
-  }
-  .mobile-menu.open { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(0); }
-  .mobile-menu a { font-size: 15px; font-weight: 600; color: var(--text-primary); text-decoration: none; padding: 10px 14px; border-radius: 12px; transition: background 0.2s; }
-  .mobile-menu a:active { background: rgba(36,99,235,0.12); }
-
-  /* ── LAYOUT ── */
-  main { position: relative; z-index: 1; }
-  section { padding: var(--section-pad-v) var(--section-pad-h); max-width: var(--max-w); margin: 0 auto; }
-
-  /* ── HERO ── */
-  #hero {
-    min-height: 100svh;
-    display: flex; align-items: center;
-    padding-top: clamp(90px, 14vw, 120px);
-    gap: clamp(30px, 5vw, 60px);
-    max-width: var(--max-w); margin: 0 auto;
-    padding-left: var(--section-pad-h); padding-right: var(--section-pad-h);
-  }
-  .hero-left { flex: 1; display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
-  .hero-right { flex-shrink: 0; display: flex; justify-content: center; align-items: center; }
-
-  .hero-badge {
-    display: inline-flex; align-items: center; gap: 6px;
-    padding: 6px 16px; border-radius: 50px; font-size: clamp(11px,1.5vw,13px); font-weight: 600; color: var(--accent);
-    background: rgba(219,234,254,0.7); border: 1px solid rgba(147,197,253,0.5);
-    backdrop-filter: blur(12px); margin-bottom: 20px; letter-spacing: 0.3px;
-  }
-  [data-theme="dark"] .hero-badge { background: rgba(96,165,250,0.15); border-color: rgba(96,165,250,0.3); }
-  .hero-badge::before { content:''; display:block; width:8px; height:8px; border-radius:50%; background:var(--accent); animation:pulse 2s infinite; }
-  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
-
-  h1 { font-size: clamp(34px, 6vw, 72px); font-weight: 800; line-height: 1.05; letter-spacing: -2px; color: var(--text-primary); margin-bottom: 16px; }
-  h1 span { color: var(--accent); }
-  .hero-sub { font-size: clamp(15px, 2vw, 18px); color: var(--text-secondary); max-width: 520px; line-height: 1.6; margin-bottom: 32px; font-weight: 400; }
-
-  .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
-  .scroll-hint { margin-top: clamp(32px,5vw,56px); display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--text-muted); }
-  .scroll-line { width: 40px; height: 1px; background: var(--text-muted); opacity: 0.5; }
-
-  /* ── PHOTO DE PROFIL ── */
-  .profile-frame { position: relative; width: clamp(180px, 25vw, 300px); height: clamp(180px, 25vw, 300px); }
-  .profile-ring { position: absolute; inset: -8px; border-radius: 50%; background: conic-gradient(from 0deg, #2463eb, #a5b4fc, #60a5fa, #2463eb); animation: spin 6s linear infinite; padding: 3px; }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .profile-ring-inner { width: 100%; height: 100%; border-radius: 50%; background: linear-gradient(135deg, #e8f0fe, #f4f8ff); }
-  [data-theme="dark"] .profile-ring-inner { background: linear-gradient(135deg, #1e293b, #0f172a); }
-  .profile-photo-wrap { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; background: rgba(255,255,255,0.3); backdrop-filter: blur(20px) saturate(180%); border: 3px solid rgba(255,255,255,0.7); box-shadow: 0 16px 48px rgba(36,99,235,0.2), inset 0 2px 0 rgba(255,255,255,0.8); display: flex; align-items: center; justify-content: center; }
-  .profile-photo-wrap img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
-  .profile-badge { position: absolute; bottom: clamp(4px,2vw,12px); right: clamp(-8px,2vw,-12px); background: rgba(255,255,255,0.9); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.7); border-radius: 50px; padding: 6px 14px; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 16px rgba(36,99,235,0.15); font-size: clamp(11px,1.5vw,13px); font-weight: 600; color: var(--text-primary); white-space: nowrap; }
-  [data-theme="dark"] .profile-badge { background: rgba(30,41,59,0.85); border-color: rgba(148,163,184,0.3); }
-  .profile-badge-dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; animation: pulse 2s infinite; flex-shrink: 0; }
-
-  /* ── TITRES ── */
-  .section-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
-  h2 { font-size: clamp(26px, 4vw, 46px); font-weight: 800; letter-spacing: -1px; color: var(--text-primary); line-height: 1.1; margin-bottom: clamp(28px,5vw,48px); }
-
-  /* ── À PROPOS ── */
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(20px,4vw,32px); align-items: center; }
-  .about-card { border-radius: var(--radius-xl); padding: clamp(24px,4vw,40px); }
-  .about-text { font-size: clamp(15px,2vw,17px); line-height: 1.75; color: var(--text-secondary); }
-  .about-text strong { color: var(--text-primary); font-weight: 700; }
-
-  .stats-col { display: flex; flex-direction: column; gap: clamp(12px,2vw,20px); }
-  .stat-card { border-radius: var(--radius-lg); padding: clamp(16px,3vw,28px); display: flex; align-items: center; gap: 16px; }
-  .stat-icon { width: 48px; height: 48px; border-radius: 14px; background: rgba(36,99,235,0.12); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
-  .stat-num { font-size: clamp(22px,4vw,28px); font-weight: 800; color: var(--accent); letter-spacing: -1px; }
-  .stat-label { font-size: 13px; color: var(--text-secondary); font-weight: 500; }
-
-  .langs { display: flex; gap: 10px; margin-top: 24px; flex-wrap: wrap; }
-  .lang-pill { display: flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 50px; background: rgba(255,255,255,0.4); border: 1px solid rgba(255,255,255,0.6); backdrop-filter: blur(10px); font-size: 13px; font-weight: 600; color: var(--text-primary); }
-  [data-theme="dark"] .lang-pill { background: rgba(148,163,184,0.1); border-color: rgba(148,163,184,0.25); }
-  .lang-flag { font-size: 18px; }
-
-  /* ── FORMATION (nouvelle section) ── */
-  .education-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: clamp(14px,2vw,20px); }
-  .edu-card { border-radius: var(--radius-lg); padding: clamp(20px,3vw,26px); display: flex; gap: 16px; align-items: flex-start; transition: transform 0.25s; }
-  .edu-card:hover { transform: translateY(-3px); }
-  .edu-icon { width: 46px; height: 46px; border-radius: 13px; background: rgba(36,99,235,0.12); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
-  .edu-title { font-size: 15px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
-  .edu-sub { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
-  .edu-year { font-size: 11px; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 6px; display: inline-block; }
-
-  /* ── COMPÉTENCES ── */
-  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: clamp(14px,2vw,20px); }
-  .skill-card { border-radius: var(--radius-lg); padding: clamp(20px,3vw,28px); transition: transform 0.25s; cursor: default; }
-  .skill-card:hover { transform: translateY(-4px); }
-  .skill-icon { font-size: clamp(26px,4vw,32px); margin-bottom: 14px; display: block; }
-  .skill-title { font-size: clamp(15px,2vw,17px); font-weight: 700; color: var(--text-primary); margin-bottom: 8px; }
-  .skill-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
-  .skill-tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
-  .tag { padding: 4px 12px; border-radius: 50px; font-size: 12px; font-weight: 600; background: rgba(36,99,235,0.10); color: var(--accent); border: 1px solid rgba(36,99,235,0.15); }
-  [data-theme="dark"] .tag { background: rgba(96,165,250,0.12); border-color: rgba(96,165,250,0.25); }
-
-  /* ── PROJETS ── */
-  .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: clamp(16px,3vw,24px); }
-  .project-card { border-radius: var(--radius-xl); padding: clamp(22px,4vw,32px); transition: transform 0.25s; }
-  .project-card:hover { transform: translateY(-5px); }
-  .project-tag { display: inline-block; padding: 4px 14px; border-radius: 50px; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; background: rgba(36,99,235,0.12); color: var(--accent); margin-bottom: 14px; }
-  .project-title { font-size: clamp(17px,2.5vw,20px); font-weight: 800; color: var(--text-primary); margin-bottom: 10px; letter-spacing: -0.3px; }
-  .project-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.65; margin-bottom: 16px; }
-  .project-link { font-size: 14px; font-weight: 600; color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: gap 0.2s; }
-  .project-link:hover { gap: 10px; }
-  .project-tech { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
-
-  /* ── CONTACT ── */
-  .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(20px,4vw,32px); align-items: start; }
-  .contact-card { border-radius: var(--radius-xl); padding: clamp(24px,4vw,40px); }
-  .contact-info h3 { font-size: clamp(20px,3vw,24px); font-weight: 800; letter-spacing: -0.5px; color: var(--text-primary); margin-bottom: 12px; }
-  .contact-info p { font-size: clamp(14px,2vw,16px); color: var(--text-secondary); line-height: 1.65; margin-bottom: 24px; }
-  .contact-item { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; text-decoration: none; border-radius: 14px; padding: 6px; margin-left: -6px; transition: background 0.2s; }
-  a.contact-item:hover { background: rgba(36,99,235,0.07); }
-  .contact-item-icon { width: 40px; height: 40px; border-radius: 12px; background: rgba(36,99,235,0.10); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
-  .contact-item-text { font-size: 15px; font-weight: 500; color: var(--text-primary); }
-  .contact-item-sub { font-size: 13px; color: var(--text-muted); word-break: break-all; }
-
-  /* ── FORMULAIRE ── */
-  .form-group { display: flex; flex-direction: column; gap: 14px; }
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  input, textarea {
-    width: 100%; padding: 14px 18px; border-radius: 14px; font-size: 15px;
-    background: rgba(255,255,255,0.3); backdrop-filter: blur(16px);
-    border: 1px solid rgba(255,255,255,0.5);
-    color: var(--text-primary); font-family: inherit;
-    outline: none; transition: border 0.2s, box-shadow 0.2s, background 0.3s;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
-    -webkit-appearance: none;
-  }
-  [data-theme="dark"] input, [data-theme="dark"] textarea { background: rgba(15,23,42,0.4); border-color: rgba(148,163,184,0.25); }
-  input::placeholder, textarea::placeholder { color: var(--text-muted); }
-  input:focus, textarea:focus { border-color: rgba(36,99,235,0.4); box-shadow: 0 0 0 3px rgba(36,99,235,0.10), inset 0 1px 0 rgba(255,255,255,0.5); }
-  textarea { resize: vertical; min-height: 120px; }
-
-  /* ── BOUTONS ── */
-  .btn-primary { padding: 14px 28px; border-radius: 50px; font-size: 15px; font-weight: 600; background: var(--accent); color: #fff; border: none; cursor: pointer; text-decoration: none; display: inline-block; box-shadow: 0 4px 20px rgba(36,99,235,0.35); transition: transform 0.2s, box-shadow 0.2s; text-align: center; touch-action: manipulation; }
-  .btn-primary:hover, .btn-primary:active { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(36,99,235,0.45); }
-  .btn-glass { padding: 14px 28px; border-radius: 50px; font-size: 15px; font-weight: 600; color: var(--text-primary); text-decoration: none; display: inline-block; background: rgba(255,255,255,0.3); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.5); box-shadow: 0 2px 12px rgba(36,99,235,0.08), inset 0 1px 0 rgba(255,255,255,0.6); transition: transform 0.2s, background 0.2s; cursor: pointer; touch-action: manipulation; }
-  [data-theme="dark"] .btn-glass { background: rgba(148,163,184,0.1); border-color: rgba(148,163,184,0.25); }
-  .btn-glass:hover, .btn-glass:active { transform: translateY(-2px); background: rgba(255,255,255,0.42); }
-  .btn-full { width: 100%; }
-  .btn-whatsapp { background: #25d366; box-shadow: 0 4px 20px rgba(37,211,102,0.35); }
-
-  /* ── FOOTER ── */
-  footer { text-align: center; padding: clamp(32px,6vw,48px) var(--section-pad-h); font-size: 14px; color: var(--text-muted); position: relative; z-index: 1; }
-  footer span { color: var(--accent); font-weight: 600; }
-
-  /* ── REVEAL ── */
-  .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
-  .reveal.visible { opacity: 1; transform: none; }
-
-  /* ════ BREAKPOINTS ════ */
-  @media (max-width: 1024px) {
-    .profile-frame { width: clamp(200px, 22vw, 260px); height: clamp(200px, 22vw, 260px); }
-  }
-
-  @media (max-width: 768px) {
-    .nav-links { display: none; }
-    .nav-hamburger { display: flex; }
-    #hero { flex-direction: column-reverse; align-items: center; text-align: center; gap: 36px; padding-top: 100px; }
-    .hero-left { align-items: center; }
-    .hero-sub { max-width: 100%; }
-    .profile-frame { width: 200px; height: 200px; }
-    .scroll-hint { justify-content: center; }
-    .about-grid, .contact-wrapper { grid-template-columns: 1fr; }
-    .form-row { grid-template-columns: 1fr; }
-  }
-
-  @media (max-width: 480px) {
-    nav { top: 10px; padding: 8px 16px; gap: 12px; }
-    h1 { letter-spacing: -1px; }
-    .hero-cta { flex-direction: column; width: 100%; }
-    .hero-cta .btn-primary, .hero-cta .btn-glass { width: 100%; text-align: center; }
-    .profile-frame { width: 170px; height: 170px; }
-    .profile-badge { font-size: 11px; padding: 5px 12px; right: -4px; bottom: 4px; }
-    .skill-card, .project-card { padding: 20px; }
-    .about-card, .contact-card { padding: 22px; }
-    .stat-card { padding: 16px 18px; }
-    .skills-grid, .projects-grid, .education-grid { grid-template-columns: 1fr; }
-    textarea { min-height: 100px; }
-  }
-
-  @media (max-width: 360px) {
-    :root { --section-pad-h: 14px; }
-    h1 { font-size: 30px; }
-    .profile-frame { width: 150px; height: 150px; }
-  }
-
-  @media (min-width: 1200px) {
-    :root { --max-w: 1120px; }
-    .profile-frame { width: 300px; height: 300px; }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .bg-blob, .profile-ring, .hero-badge::before, .profile-badge-dot { animation: none !important; }
-    .reveal { opacity: 1; transform: none; }
-  }
-
-  @media (hover: none) {
-    .nav-links a, .btn-primary, .btn-glass, .project-link { min-height: 44px; display: inline-flex; align-items: center; }
-    .skill-card:hover, .project-card:hover, .edu-card:hover { transform: none; }
-  }
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<!-- ═══ SPRITE D'ICÔNES SVG (aucun emoji sur le site) ═══ -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/></symbol>
+  <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M12 2c2.2 2 3.3 5 3.3 8 0 2.2-1.1 4.3-3.3 6.3-2.2-2-3.3-4.1-3.3-6.3 0-3 1.1-6 3.3-8z"/><path d="M9 15.5l-2.5 2.5.7 2.3 2.3-.7M15 15.5l2.5 2.5-.7 2.3-2.3-.7"/><circle cx="12" cy="9" r="1.4"/></symbol>
+  <symbol id="i-plane" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 4.5h6.5A3.5 3.5 0 0112 8v11.5a3 3 0 00-3-3H2z"/><path d="M22 4.5h-6.5A3.5 3.5 0 0012 8v11.5a3 3 0 013-3h7z"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 0116 0v1"/><rect x="2" y="13" width="5" height="7" rx="1.5"/><rect x="17" y="13" width="5" height="7" rx="1.5"/><path d="M20 20a4 4 0 01-4 3h-2"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 010 20 15.3 15.3 0 010-20z"/></symbol>
+  <symbol id="i-phone-mobile" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16.2 7.8l-2.6 6.8-6.8 2.6 2.6-6.8z"/></symbol>
+  <symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11" rx="2.5"/><path d="M12 2v4"/><circle cx="12" cy="2.8" r="1"/><path d="M9 14v1M15 14v1"/><path d="M9.5 17.5h5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2.5 6l9.5 7 9.5-7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.7 7-12.2A7 7 0 105 9.8C5 15.3 12 22 12 22z"/><circle cx="12" cy="9.8" r="2.4"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 01-8.4 8.4 8.3 8.3 0 01-3.9-.96L3 21l1.94-5.62A8.4 8.4 0 1121 11.5z"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6M9 9h1"/></symbol>
+</svg>
 
 <div class="bg-blob blob1"></div>
 <div class="bg-blob blob2"></div>
@@ -386,7 +93,9 @@
     <a href="#projects">Projets</a>
     <a href="#contact">Contact</a>
   </div>
-  <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème" title="Changer de thème">🌙</button>
+  <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème" title="Changer de thème">
+    <svg class="icon" id="themeIcon"><use href="#i-moon"/></svg>
+  </button>
   <div class="nav-hamburger" id="hamburger" aria-label="Menu" role="button">
     <span></span><span></span><span></span>
   </div>
@@ -404,7 +113,7 @@
   <!-- ── HERO ── -->
   <section id="hero">
     <div class="hero-left">
-      <div class="hero-badge">Disponible pour stages & opportunités</div>
+      <div class="hero-badge"><span class="hero-badge-dot"></span>Disponible pour stages & opportunités</div>
       <h1>Hery Tiana<br><span>RAZAFINIARIVO</span></h1>
       <p class="hero-sub">Étudiant en 3e année de licence en Génie Électromécanique & Informatique Industrielle à l'ISPM Madagascar — passionné par l'IoT, la robotique et les systèmes intelligents.</p>
       <div class="hero-cta">
@@ -420,7 +129,7 @@
       <div class="profile-frame">
         <div class="profile-ring"><div class="profile-ring-inner"></div></div>
         <div class="profile-photo-wrap">
-          <img src="profil.jpg" alt="Hery Tiana RAZAFINIARIVO">
+          <img src="assets/profil.jpg" alt="Hery Tiana RAZAFINIARIVO">
         </div>
         <div class="profile-badge">
           <div class="profile-badge-dot"></div>
@@ -438,31 +147,31 @@
       <div class="about-card glass-strong">
         <p class="about-text">
           Je suis <strong>Hery Tiana (Natianah)</strong>, étudiant malgache en <strong>Génie Électromécanique et Informatique Industrielle</strong> à l'ISPM Madagascar.<br><br>
-          Mon profil est orienté <strong>ingénierie pratique</strong> : je construis des projets concrets alliant électronique, robotique, IoT et logiciel. Je suis fasciné par la convergence entre le monde physique et le numérique, et je rêve de travailler dans l'<strong>aéronautique</strong>. ✈️
+          Mon profil est orienté <strong>ingénierie pratique</strong> : je construis des projets concrets alliant électronique, robotique, IoT et logiciel. Je suis fasciné par la convergence entre le monde physique et le numérique, et je rêve de travailler dans l'<strong>aéronautique</strong>.
         </p>
         <div class="langs">
-          <div class="lang-pill"><span class="lang-flag">🇲🇬</span> Malgache</div>
-          <div class="lang-pill"><span class="lang-flag">🇫🇷</span> Français</div>
-          <div class="lang-pill"><span class="lang-flag">🇺🇸</span> Anglais</div>
+          <div class="lang-pill"><span class="lang-code">MG</span> Malgache</div>
+          <div class="lang-pill"><span class="lang-code">FR</span> Français</div>
+          <div class="lang-pill"><span class="lang-code">EN</span> Anglais</div>
         </div>
       </div>
       <div class="stats-col">
         <div class="stat-card glass">
-          <div class="stat-icon">🎓</div>
+          <div class="stat-icon"><svg class="icon"><use href="#i-cap"/></svg></div>
           <div>
             <div class="stat-num">L3</div>
             <div class="stat-label">Licence Génie Électromécanique — ISPM</div>
           </div>
         </div>
         <div class="stat-card glass">
-          <div class="stat-icon">🚀</div>
+          <div class="stat-icon"><svg class="icon"><use href="#i-rocket"/></svg></div>
           <div>
             <div class="stat-num">4+</div>
             <div class="stat-label">Projets techniques réalisés</div>
           </div>
         </div>
         <div class="stat-card glass">
-          <div class="stat-icon">✈️</div>
+          <div class="stat-icon"><svg class="icon"><use href="#i-plane"/></svg></div>
           <div>
             <div class="stat-num">Vision</div>
             <div class="stat-label">Aéronautique & systèmes intelligents</div>
@@ -472,13 +181,13 @@
     </div>
   </section>
 
-  <!-- ── FORMATION (nouvelle section) ── -->
+  <!-- ── FORMATION ── -->
   <section id="education">
     <div class="section-eyebrow">Parcours</div>
     <h2>Formation & certifications</h2>
     <div class="education-grid">
       <div class="edu-card glass reveal">
-        <div class="edu-icon">🎓</div>
+        <div class="edu-icon"><svg class="icon"><use href="#i-cap"/></svg></div>
         <div>
           <div class="edu-title">Licence Génie Électromécanique & Informatique Industrielle</div>
           <div class="edu-sub">ISPM Madagascar — en cours</div>
@@ -486,28 +195,28 @@
         </div>
       </div>
       <div class="edu-card glass reveal" style="transition-delay:0.1s">
-        <div class="edu-icon">📘</div>
+        <div class="edu-icon"><svg class="icon"><use href="#i-book"/></svg></div>
         <div>
           <div class="edu-title">Baccalauréat Technologique TGI</div>
           <div class="edu-sub">Technologie Génie Industriel</div>
         </div>
       </div>
       <div class="edu-card glass reveal" style="transition-delay:0.2s">
-        <div class="edu-icon">🇬🇧</div>
+        <div class="edu-icon"><svg class="icon"><use href="#i-globe"/></svg></div>
         <div>
           <div class="edu-title">Certificat d'anglais — Level One</div>
           <div class="edu-sub">Compétences en anglais professionnel</div>
         </div>
       </div>
       <div class="edu-card glass reveal" style="transition-delay:0.3s">
-        <div class="edu-icon">📞</div>
+        <div class="edu-icon"><svg class="icon"><use href="#i-headset"/></svg></div>
         <div>
           <div class="edu-title">Formation téléconseiller francophone</div>
           <div class="edu-sub">Communication client & relation francophone</div>
         </div>
       </div>
       <div class="edu-card glass reveal" style="transition-delay:0.4s">
-        <div class="edu-icon">⚡</div>
+        <div class="edu-icon"><svg class="icon"><use href="#i-zap"/></svg></div>
         <div>
           <div class="edu-title">Bases en électricité domestique</div>
           <div class="edu-sub">Installation et sécurité électrique</div>
@@ -522,37 +231,37 @@
     <h2>Ce que je maîtrise</h2>
     <div class="skills-grid">
       <div class="skill-card glass reveal">
-        <span class="skill-icon">💻</span>
+        <div class="skill-icon"><svg class="icon"><use href="#i-code"/></svg></div>
         <div class="skill-title">Programmation</div>
         <p class="skill-desc">Développement embarqué et applicatif, du microcontrôleur au logiciel de supervision.</p>
         <div class="skill-tags"><span class="tag">Python</span><span class="tag">C++</span><span class="tag">Arduino</span></div>
       </div>
       <div class="skill-card glass reveal" style="transition-delay:0.1s">
-        <span class="skill-icon">🌐</span>
+        <div class="skill-icon"><svg class="icon"><use href="#i-globe"/></svg></div>
         <div class="skill-title">IoT & Systèmes embarqués</div>
         <p class="skill-desc">Conception de systèmes connectés avec ESP8266, Arduino, capteurs et modules de communication.</p>
         <div class="skill-tags"><span class="tag">ESP8266</span><span class="tag">HC-05 BT</span><span class="tag">Modbus</span></div>
       </div>
       <div class="skill-card glass reveal" style="transition-delay:0.2s">
-        <span class="skill-icon">📱</span>
+        <div class="skill-icon"><svg class="icon"><use href="#i-phone-mobile"/></svg></div>
         <div class="skill-title">Développement Android</div>
         <p class="skill-desc">Applications mobiles pour contrôle de systèmes embarqués, avec communication Bluetooth et interface moderne.</p>
         <div class="skill-tags"><span class="tag">AIDE</span><span class="tag">Kodular</span><span class="tag">Bluetooth</span></div>
       </div>
       <div class="skill-card glass reveal" style="transition-delay:0.3s">
-        <span class="skill-icon">📐</span>
+        <div class="skill-icon"><svg class="icon"><use href="#i-compass"/></svg></div>
         <div class="skill-title">CAO & PCB Design</div>
         <p class="skill-desc">Modélisation mécanique 3D, conception de circuits imprimés et plans industriels.</p>
         <div class="skill-tags"><span class="tag">SolidWorks</span><span class="tag">AutoCAD</span><span class="tag">KiCad</span></div>
       </div>
       <div class="skill-card glass reveal" style="transition-delay:0.4s">
-        <span class="skill-icon">⚡</span>
+        <div class="skill-icon"><svg class="icon"><use href="#i-zap"/></svg></div>
         <div class="skill-title">Électronique & Mesure</div>
         <p class="skill-desc">Capteurs de tension (ZMPT101B), température, modules relais, systèmes de mesure et automatisation.</p>
         <div class="skill-tags"><span class="tag">Capteurs</span><span class="tag">Relais</span><span class="tag">ZMPT101B</span></div>
       </div>
       <div class="skill-card glass reveal" style="transition-delay:0.5s">
-        <span class="skill-icon">🤖</span>
+        <div class="skill-icon"><svg class="icon"><use href="#i-bot"/></svg></div>
         <div class="skill-title">Robotique</div>
         <p class="skill-desc">Conception et contrôle de bras robotiques multi-axes, asservissement de servomoteurs, systèmes mécatroniques.</p>
         <div class="skill-tags"><span class="tag">Servomoteurs</span><span class="tag">6 DOF</span><span class="tag">Mécatronique</span></div>
@@ -570,28 +279,28 @@
         <div class="project-title">Distributeur automatique de boissons</div>
         <p class="project-desc">Système complet avec 3 modes de boisson, sélection via potentiomètre, validation tactile, pompes temporisées, affichage LCD I2C et LEDs d'état.</p>
         <div class="project-tech"><span class="tag">Arduino</span><span class="tag">LCD I2C</span><span class="tag">C++</span></div>
-        <a href="LIEN_DRIVE_1" target="_blank" rel="noopener" class="project-link">📄 Voir le PDF →</a>
+        <a href="LIEN_DRIVE_1" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
       </div>
       <div class="project-card glass-strong reveal" style="transition-delay:0.1s">
         <div class="project-tag">IoT Mobile</div>
         <div class="project-title">Smart Juice — App Android IoT</div>
         <p class="project-desc">Application Android de contrôle de machine via Bluetooth HC-05 : interface dark mode, contrôle vocal et manuel, historique utilisateur.</p>
         <div class="project-tech"><span class="tag">AIDE</span><span class="tag">HC-05</span><span class="tag">Android</span></div>
-        <a href="LIEN_DRIVE_2" target="_blank" rel="noopener" class="project-link">📄 Voir le PDF →</a>
+        <a href="LIEN_DRIVE_2" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
       </div>
       <div class="project-card glass-strong reveal" style="transition-delay:0.2s">
         <div class="project-tag">Robotique</div>
         <div class="project-title">Bras robotique 6 DOF</div>
         <p class="project-desc">Bras articulé à 6 servomoteurs et pince de manipulation, contrôlé via application mobile. Expérimentation robotique et contrôle multi-axes.</p>
         <div class="project-tech"><span class="tag">Arduino</span><span class="tag">Servos</span><span class="tag">Mobile</span></div>
-        <a href="LIEN_DRIVE_3" target="_blank" rel="noopener" class="project-link">📄 Voir le PDF →</a>
+        <a href="LIEN_DRIVE_3" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
       </div>
       <div class="project-card glass-strong reveal" style="transition-delay:0.3s">
         <div class="project-tag">Maison connectée</div>
         <div class="project-title">Gestion électrique IoT domestique</div>
         <p class="project-desc">Système intelligent connecté via ESP8266 WiFi : contrôle d'appareils par relais, surveillance de tension et température, supervision à distance.</p>
         <div class="project-tech"><span class="tag">ESP8266</span><span class="tag">WiFi</span><span class="tag">ZMPT101B</span></div>
-        <a href="LIEN_DRIVE_4" target="_blank" rel="noopener" class="project-link">📄 Voir le PDF →</a>
+        <a href="LIEN_DRIVE_4" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
       </div>
     </div>
   </section>
@@ -606,7 +315,7 @@
         <p>Vous cherchez un profil créatif alliant hardware et software ? Je suis ouvert aux stages, collaborations et projets techniques.</p>
 
         <a href="mailto:herytianarazafiniarivo@gmail.com" class="contact-item">
-          <div class="contact-item-icon">📧</div>
+          <div class="contact-item-icon"><svg class="icon"><use href="#i-mail"/></svg></div>
           <div>
             <div class="contact-item-text">Email</div>
             <div class="contact-item-sub">herytianarazafiniarivo@gmail.com</div>
@@ -614,15 +323,15 @@
         </a>
 
         <div class="contact-item">
-          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-icon"><svg class="icon"><use href="#i-pin"/></svg></div>
           <div>
             <div class="contact-item-text">Localisation</div>
-            <div class="contact-item-sub">Tana V, Madagascar 🇲🇬</div>
+            <div class="contact-item-sub">Tana V, Madagascar</div>
           </div>
         </div>
 
         <div class="contact-item">
-          <div class="contact-item-icon">🎓</div>
+          <div class="contact-item-icon"><svg class="icon"><use href="#i-cap"/></svg></div>
           <div>
             <div class="contact-item-text">Formation</div>
             <div class="contact-item-sub">ISPM — Génie Électromécanique & Info Industrielle</div>
@@ -630,7 +339,7 @@
         </div>
 
         <a href="https://wa.me/261327353371" target="_blank" rel="noopener" class="contact-item">
-          <div class="contact-item-icon">💬</div>
+          <div class="contact-item-icon"><svg class="icon"><use href="#i-chat"/></svg></div>
           <div>
             <div class="contact-item-text">WhatsApp</div>
             <div class="contact-item-sub">+261 32 73 533 71</div>
@@ -638,7 +347,7 @@
         </a>
 
         <a href="https://wa.me/261327353371" target="_blank" rel="noopener" class="btn-primary btn-full btn-whatsapp" style="margin-top:8px;">
-          💬 Discuter sur WhatsApp
+          <svg class="icon"><use href="#i-chat"/></svg>Discuter sur WhatsApp
         </a>
       </div>
 
@@ -650,7 +359,7 @@
           </div>
           <input type="text" id="f-objet" placeholder="Objet du message" />
           <textarea id="f-msg" placeholder="Votre message..."></textarea>
-          <button class="btn-primary btn-full" onclick="envoyerEmail()">✉️ Envoyer le message</button>
+          <button class="btn-primary btn-full" onclick="envoyerEmail()"><svg class="icon"><use href="#i-send"/></svg>Envoyer le message</button>
         </div>
         <p style="margin-top:14px; font-size:12px; color:var(--text-muted); text-align:center;">
           Le bouton ouvrira votre application mail avec le message pré-rempli.
@@ -664,70 +373,6 @@
   <p>Conçu avec soin — <span>Hery Tiana RAZAFINIARIVO</span> © 2026 · ISPM Madagascar</p>
 </footer>
 
-<script>
-  // Scroll reveal
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
-  reveals.forEach(el => observer.observe(el));
-
-  // Smooth nav (desktop + mobile menu links)
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      e.preventDefault();
-      document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
-      closeMobileMenu();
-    });
-  });
-
-  // Hamburger menu
-  const hamburger = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  function closeMobileMenu() {
-    hamburger.classList.remove('open');
-    mobileMenu.classList.remove('open');
-  }
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    mobileMenu.classList.toggle('open');
-  });
-  document.addEventListener('click', (e) => {
-    if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target)) closeMobileMenu();
-  });
-
-  // Mode sombre avec mémoire en session
-  const themeToggle = document.getElementById('themeToggle');
-  let currentTheme = 'light';
-  function applyTheme(theme) {
-    currentTheme = theme;
-    if (theme === 'dark') {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      themeToggle.textContent = '☀️';
-    } else {
-      document.documentElement.removeAttribute('data-theme');
-      themeToggle.textContent = '🌙';
-    }
-  }
-  // Respecte la préférence système au premier chargement
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    applyTheme('dark');
-  }
-  themeToggle.addEventListener('click', () => {
-    applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
-  });
-
-  // Email via mailto
-  function envoyerEmail() {
-    const nom   = document.getElementById('f-nom').value.trim();
-    const email = document.getElementById('f-email').value.trim();
-    const objet = document.getElementById('f-objet').value.trim();
-    const msg   = document.getElementById('f-msg').value.trim();
-    if (!nom || !email || !msg) { alert('Merci de remplir au minimum votre nom, email et message.'); return; }
-    const sujet = objet || 'Contact depuis mon portfolio';
-    const corps = `Bonjour Hery Tiana,\n\nVous avez reçu un message depuis votre portfolio :\n\nDe : ${nom}\nEmail : ${email}\n\n${msg}\n\n---\nEnvoyé depuis hery-tiana.portfolio`;
-    window.location.href = `mailto:herytianarazafiniarivo@gmail.com?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corps)}`;
-  }
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
