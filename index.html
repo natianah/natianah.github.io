@@ -9,13 +9,13 @@
 <meta name="keywords" content="Hery Tiana, Natianah, portfolio, électromécanique, informatique industrielle, IoT, robotique, Arduino, ESP8266, ISPM Madagascar, systèmes embarqués">
 <meta name="author" content="Hery Tiana RAZAFINIARIVO">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://natianah.github.io/">
+<link rel="canonical" href="https://protfolio-natianah.vercel.app/">
 
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://natianah.github.io/">
+<meta property="og:url" content="https://protfolio-natianah.vercel.app/">
 <meta property="og:title" content="Hery Tiana RAZAFINIARIVO — Portfolio Ingénierie">
 <meta property="og:description" content="Étudiant en Génie Électromécanique & Informatique Industrielle à l'ISPM Madagascar. Projets IoT, robotique, systèmes embarqués.">
-<meta property="og:image" content="https://natianah.github.io/profil.jpg">
+<meta property="og:image" content="https://protfolio-natianah.vercel.app/profil.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="fr_FR">
@@ -24,7 +24,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Hery Tiana RAZAFINIARIVO — Portfolio Ingénierie">
 <meta name="twitter:description" content="Étudiant en Génie Électromécanique & IoT à l'ISPM Madagascar.">
-<meta name="twitter:image" content="https://natianah.github.io/profil.jpg">
+<meta name="twitter:image" content="https://protfolio-natianah.vercel.app/profil.jpg">
 
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="alternate icon" type="image/png" href="profil.jpg">
@@ -32,8 +32,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="HT Portfolio">
-<meta name="theme-color" content="#2463eb">
-<meta name="msapplication-TileColor" content="#2463eb">
+<meta name="theme-color" content="#14B8A6">
+<meta name="msapplication-TileColor" content="#14B8A6">
 
 <script type="application/ld+json">
 {
@@ -41,8 +41,8 @@
   "@type": "Person",
   "name": "Hery Tiana RAZAFINIARIVO",
   "alternateName": "Natianah",
-  "url": "https://natianah.github.io/",
-  "image": "https://natianah.github.io/profil.jpg",
+  "url": "https://protfolio-natianah.vercel.app/",
+  "image": "https://protfolio-natianah.vercel.app/profil.jpg",
   "jobTitle": "Étudiant en Génie Électromécanique et Informatique Industrielle",
   "worksFor": { "@type": "Organization", "name": "ISPM Madagascar" },
   "address": { "@type": "PostalAddress", "addressLocality": "Antananarivo", "addressCountry": "MG" },
@@ -72,9 +72,10 @@
   left: 8px;
   top: 10px;
   bottom: 10px;
-  width: 3px;
+  width: 2px;
   background: linear-gradient(to bottom, var(--accent), var(--accent-secondary));
   border-radius: 2px;
+  opacity: 0.6;
 }
 
 .edu-card {
@@ -87,7 +88,7 @@
   content: '';
   position: absolute;
   left: -26px;
-  top: 20px;
+  top: 22px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -95,12 +96,17 @@
   border: 3px solid var(--bg-primary);
   box-shadow: 0 0 0 3px var(--accent);
 }
+
+/* Animation de la photo de profil */
+.profile-ring {
+  animation: spin 8s linear infinite;
+}
 </style>
 
 </head>
 <body>
 
-<!-- ═══ SPRITE D'ICÔNES SVG (aucun emoji sur le site) ═══ -->
+<!-- ═══ SPRITE D'ICÔNES SVG ═══ -->
 <svg style="display:none" aria-hidden="true">
   <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></symbol>
   <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
@@ -162,10 +168,14 @@
           Je transforme des idées en systèmes intelligents connectés.
         </span>
       </p>
-      <p class="hero-sub">Étudiant en 3e année de licence en Génie Électromécanique & Informatique Industrielle à l'ISPM Madagascar.</p>
+      <p class="hero-sub">
+        Étudiant en 3e année de licence en Génie Électromécanique &amp; Informatique Industrielle à l'ISPM Madagascar.
+        <strong style="color: var(--accent); display: block; margin-top: 8px;">Disponible pour un stage à partir de 2026.</strong>
+      </p>
       <div class="hero-cta">
         <a href="#projects" class="btn-primary">Voir mes projets</a>
         <a href="#contact" class="btn-glass">Me contacter</a>
+        <a href="LIEN_VERS_VOTRE_CV" target="_blank" rel="noopener noreferrer" class="btn-glass" style="border-color: var(--accent);">📄 Télécharger mon CV</a>
       </div>
       <div class="scroll-hint">
         <div class="scroll-line"></div>
@@ -221,7 +231,7 @@
           <div class="stat-icon"><svg class="icon"><use href="#i-plane"/></svg></div>
           <div>
             <div class="stat-num">Vision</div>
-            <div class="stat-label">Aéronautique & systèmes intelligents</div>
+            <div class="stat-label">Aéronautique &amp; systèmes intelligents</div>
           </div>
         </div>
       </div>
@@ -231,12 +241,12 @@
   <!-- ── FORMATION ── -->
   <section id="education">
     <div class="section-eyebrow">Parcours</div>
-    <h2>Formation & certifications</h2>
+    <h2>Formation &amp; certifications</h2>
     <div class="education-grid">
       <div class="edu-card glass reveal">
         <div class="edu-icon"><svg class="icon"><use href="#i-cap"/></svg></div>
         <div>
-          <div class="edu-title">Licence Génie Électromécanique & Informatique Industrielle</div>
+          <div class="edu-title">Licence Génie Électromécanique &amp; Informatique Industrielle</div>
           <div class="edu-sub">ISPM Madagascar — en cours</div>
           <span class="edu-year">3ᵉ année</span>
         </div>
@@ -259,7 +269,7 @@
         <div class="edu-icon"><svg class="icon"><use href="#i-headset"/></svg></div>
         <div>
           <div class="edu-title">Formation téléconseiller francophone</div>
-          <div class="edu-sub">Communication client & relation francophone</div>
+          <div class="edu-sub">Communication client &amp; relation francophone</div>
         </div>
       </div>
       <div class="edu-card glass reveal" style="transition-delay:0.4s">
@@ -285,7 +295,7 @@
       </div>
       <div class="skill-card glass reveal" style="transition-delay:0.1s">
         <div class="skill-icon"><svg class="icon"><use href="#i-globe"/></svg></div>
-        <div class="skill-title">IoT & Systèmes embarqués</div>
+        <div class="skill-title">IoT &amp; Systèmes embarqués</div>
         <p class="skill-desc">Conception de systèmes connectés avec ESP8266, Arduino, capteurs et modules de communication.</p>
         <div class="skill-tags"><span class="tag">ESP8266</span><span class="tag">HC-05 BT</span><span class="tag">Modbus</span></div>
       </div>
@@ -297,13 +307,13 @@
       </div>
       <div class="skill-card glass reveal" style="transition-delay:0.3s">
         <div class="skill-icon"><svg class="icon"><use href="#i-compass"/></svg></div>
-        <div class="skill-title">CAO & PCB Design</div>
+        <div class="skill-title">CAO &amp; PCB Design</div>
         <p class="skill-desc">Modélisation mécanique 3D, conception de circuits imprimés et plans industriels.</p>
         <div class="skill-tags"><span class="tag">SolidWorks</span><span class="tag">AutoCAD</span><span class="tag">KiCad</span></div>
       </div>
       <div class="skill-card glass reveal" style="transition-delay:0.4s">
         <div class="skill-icon"><svg class="icon"><use href="#i-zap"/></svg></div>
-        <div class="skill-title">Électronique & Mesure</div>
+        <div class="skill-title">Électronique &amp; Mesure</div>
         <p class="skill-desc">Capteurs de tension (ZMPT101B), température, modules relais, systèmes de mesure et automatisation.</p>
         <div class="skill-tags"><span class="tag">Capteurs</span><span class="tag">Relais</span><span class="tag">ZMPT101B</span></div>
       </div>
@@ -326,28 +336,28 @@
         <div class="project-title">Distributeur automatique de boissons</div>
         <p class="project-desc"><strong>Problème résolu :</strong> J'ai conçu un prototype de distributeur qui sert trois types de boissons avec un système de validation tactile, résolvant les problèmes de dosage imprécis et d'hygiène dans les fontaines à boissons classiques.</p>
         <div class="project-tech"><span class="tag">Arduino</span><span class="tag">LCD I2C</span><span class="tag">C++</span></div>
-        <a href="https://drive.google.com/file/d/XXXXX1/view" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
+        <a href="https://drive.google.com/file/d/XXXXX1/view" target="_blank" rel="noopener noreferrer" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
       </div>
       <div class="project-card glass-strong reveal" style="transition-delay:0.1s">
         <div class="project-tag">IoT Mobile</div>
         <div class="project-title">Smart Juice — App Android IoT</div>
         <p class="project-desc"><strong>Problème résolu :</strong> J'ai développé une application Android qui permet de contrôler une machine à jus à distance via Bluetooth, offrant une interface intuitive et un contrôle vocal pour simplifier l'expérience utilisateur.</p>
         <div class="project-tech"><span class="tag">AIDE</span><span class="tag">HC-05</span><span class="tag">Android</span></div>
-        <a href="https://drive.google.com/file/d/XXXXX2/view" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
+        <a href="https://drive.google.com/file/d/XXXXX2/view" target="_blank" rel="noopener noreferrer" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
       </div>
       <div class="project-card glass-strong reveal" style="transition-delay:0.2s">
         <div class="project-tag">Robotique</div>
         <div class="project-title">Bras robotique 6 DOF</div>
         <p class="project-desc"><strong>Problème résolu :</strong> J'ai réalisé un bras articulé à 6 axes pour expérimenter le contrôle multi-axes et la manipulation précise, simulant des applications industrielles de pick-and-place.</p>
         <div class="project-tech"><span class="tag">Arduino</span><span class="tag">Servos</span><span class="tag">Mobile</span></div>
-        <a href="https://drive.google.com/file/d/XXXXX3/view" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
+        <a href="https://drive.google.com/file/d/XXXXX3/view" target="_blank" rel="noopener noreferrer" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
       </div>
       <div class="project-card glass-strong reveal" style="transition-delay:0.3s">
         <div class="project-tag">Maison connectée</div>
         <div class="project-title">Gestion électrique IoT domestique</div>
         <p class="project-desc"><strong>Problème résolu :</strong> J'ai conçu un système de supervision à distance pour surveiller la consommation électrique et contrôler les appareils, apportant une solution de gestion énergétique pour les foyers connectés.</p>
         <div class="project-tech"><span class="tag">ESP8266</span><span class="tag">WiFi</span><span class="tag">ZMPT101B</span></div>
-        <a href="https://drive.google.com/file/d/XXXXX4/view" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
+        <a href="https://drive.google.com/file/d/XXXXX4/view" target="_blank" rel="noopener noreferrer" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
       </div>
     </div>
   </section>
@@ -362,12 +372,12 @@
         <p>Vous cherchez un profil créatif alliant hardware et software ? Je suis ouvert aux stages, collaborations et projets techniques.</p>
 
         <!-- Liens sociaux -->
-        <div style="display: flex; gap: 12px; margin: 16px 0 20px 0; flex-wrap: wrap;">
-          <a href="https://github.com/natianah" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px; background: var(--glass-bg); border-radius: 30px; color: var(--text-primary); text-decoration: none; border: 1px solid var(--glass-border); transition: all 0.3s ease; font-size: 0.95rem;">
+        <div class="social-links">
+          <a href="https://github.com/natianah" target="_blank" rel="noopener noreferrer" class="social-link">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub
           </a>
-          <a href="https://linkedin.com/in/votreprofil" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px; background: var(--glass-bg); border-radius: 30px; color: var(--text-primary); text-decoration: none; border: 1px solid var(--glass-border); transition: all 0.3s ease; font-size: 0.95rem;">
+          <a href="https://linkedin.com/in/votreprofil" target="_blank" rel="noopener noreferrer" class="social-link">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             LinkedIn
           </a>
@@ -393,11 +403,11 @@
           <div class="contact-item-icon"><svg class="icon"><use href="#i-cap"/></svg></div>
           <div>
             <div class="contact-item-text">Formation</div>
-            <div class="contact-item-sub">ISPM — Génie Électromécanique & Info Industrielle</div>
+            <div class="contact-item-sub">ISPM — Génie Électromécanique &amp; Info Industrielle</div>
           </div>
         </div>
 
-        <a href="https://wa.me/261327353371" target="_blank" rel="noopener" class="contact-item">
+        <a href="https://wa.me/261327353371" target="_blank" rel="noopener noreferrer" class="contact-item">
           <div class="contact-item-icon"><svg class="icon"><use href="#i-chat"/></svg></div>
           <div>
             <div class="contact-item-text">WhatsApp</div>
@@ -405,7 +415,7 @@
           </div>
         </a>
 
-        <a href="https://wa.me/261327353371" target="_blank" rel="noopener" class="btn-primary btn-full btn-whatsapp" style="margin-top:8px;">
+        <a href="https://wa.me/261327353371" target="_blank" rel="noopener noreferrer" class="btn-primary btn-full btn-whatsapp" style="margin-top:8px;">
           <svg class="icon"><use href="#i-chat"/></svg>Discuter sur WhatsApp
         </a>
       </div>
@@ -418,7 +428,15 @@
           </div>
           <input type="text" id="f-objet" placeholder="Objet du message" />
           <textarea id="f-msg" placeholder="Votre message..."></textarea>
-          <button class="btn-primary btn-full" onclick="envoyerEmail()"><svg class="icon"><use href="#i-send"/></svg>Envoyer le message</button>
+          
+          <!-- 🔒 Champ honeypot anti-spam (caché) -->
+          <div style="display: none;">
+            <input type="text" id="f-honeypot" name="honeypot" placeholder="Ne pas remplir" />
+          </div>
+          
+          <button class="btn-primary btn-full" onclick="envoyerEmail()">
+            <svg class="icon"><use href="#i-send"/></svg>Envoyer le message
+          </button>
         </div>
         <p style="margin-top:14px; font-size:12px; color:var(--text-muted); text-align:center;">
           Le bouton ouvrira votre application mail avec le message pré-rempli.
@@ -430,6 +448,11 @@
 
 <footer>
   <p>Conçu avec soin — <span>Hery Tiana RAZAFINIARIVO</span> © 2026 · ISPM Madagascar</p>
+  <p style="margin-top: 10px; font-size: 12px; color: var(--text-muted);">
+    <a href="/privacy.html" style="color: var(--text-muted); text-decoration: none; transition: color 0.2s;">Politique de confidentialité</a>
+    <span style="margin: 0 8px;">·</span>
+    <span>Aucune donnée personnelle collectée</span>
+  </p>
 </footer>
 
 <script src="js/script.js"></script>

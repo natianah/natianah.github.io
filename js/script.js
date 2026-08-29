@@ -84,6 +84,13 @@ function envoyerEmail() {
   const email = document.getElementById('f-email')?.value.trim() || '';
   const objet = document.getElementById('f-objet')?.value.trim() || '';
   const msg = document.getElementById('f-msg')?.value.trim() || '';
+  const honeypot = document.getElementById('f-honeypot')?.value || '';
+
+  // Vérification anti-spam : si le champ honeypot est rempli, c'est un robot
+  if (honeypot !== '') {
+    alert('Erreur de validation. Veuillez réessayer.');
+    return;
+  }
 
   if (!nom || !email || !msg) {
     alert('Merci de remplir au minimum votre nom, email et message.');
