@@ -50,11 +50,53 @@
   "telephone": "+261327353371",
   "knowsAbout": ["IoT", "Robotique", "Systèmes embarqués", "Arduino", "ESP8266", "Python", "C++", "SolidWorks", "AutoCAD", "KiCad"],
   "knowsLanguage": ["fr", "en", "mg"],
-  "sameAs": ["https://natianah.github.io/"]
+  "sameAs": ["https://github.com/natianah", "https://linkedin.com/in/votreprofil"]
 }
 </script>
 
 <link rel="stylesheet" href="css/style.css">
+
+<style>
+/* Timeline pour la formation */
+.education-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  padding-left: 30px;
+}
+
+.education-grid::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  bottom: 10px;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--accent), var(--accent-secondary));
+  border-radius: 2px;
+}
+
+.edu-card {
+  position: relative;
+  padding-left: 20px;
+  border-left: none;
+}
+
+.edu-card::before {
+  content: '';
+  position: absolute;
+  left: -26px;
+  top: 20px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg-primary);
+  box-shadow: 0 0 0 3px var(--accent);
+}
+</style>
+
 </head>
 <body>
 
@@ -115,7 +157,12 @@
     <div class="hero-left">
       <div class="hero-badge"><span class="hero-badge-dot"></span>Disponible pour stages & opportunités</div>
       <h1>Hery Tiana<br><span>RAZAFINIARIVO</span></h1>
-      <p class="hero-sub">Étudiant en 3e année de licence en Génie Électromécanique & Informatique Industrielle à l'ISPM Madagascar — passionné par l'IoT, la robotique et les systèmes intelligents.</p>
+      <p class="hero-sub" style="font-size: 1.2rem; font-weight: 500; color: var(--text-primary);">
+        <span style="display: inline-block; background: linear-gradient(135deg, var(--accent), var(--accent-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+          Je transforme des idées en systèmes intelligents connectés.
+        </span>
+      </p>
+      <p class="hero-sub">Étudiant en 3e année de licence en Génie Électromécanique & Informatique Industrielle à l'ISPM Madagascar.</p>
       <div class="hero-cta">
         <a href="#projects" class="btn-primary">Voir mes projets</a>
         <a href="#contact" class="btn-glass">Me contacter</a>
@@ -147,7 +194,7 @@
       <div class="about-card glass-strong">
         <p class="about-text">
           Je suis <strong>Hery Tiana (Natianah)</strong>, étudiant malgache en <strong>Génie Électromécanique et Informatique Industrielle</strong> à l'ISPM Madagascar.<br><br>
-          Mon profil est orienté <strong>ingénierie pratique</strong> : je construis des projets concrets alliant électronique, robotique, IoT et logiciel. Je suis fasciné par la convergence entre le monde physique et le numérique, et je rêve de travailler dans l'<strong>aéronautique</strong>.
+          Mon profil est orienté <strong>ingénierie pratique</strong> : je construis des projets concrets alliant électronique, robotique, IoT et logiciel. <span style="background: linear-gradient(135deg, var(--accent), var(--accent-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 600;">Je suis fasciné par la convergence entre le monde physique et le numérique</span>, et mon objectif est de contribuer à l'innovation dans le secteur de l'<strong>aéronautique</strong>.
         </p>
         <div class="langs">
           <div class="lang-pill"><span class="lang-code">MG</span> Malgache</div>
@@ -277,30 +324,30 @@
       <div class="project-card glass-strong reveal">
         <div class="project-tag">Automatisme</div>
         <div class="project-title">Distributeur automatique de boissons</div>
-        <p class="project-desc">Système complet avec 3 modes de boisson, sélection via potentiomètre, validation tactile, pompes temporisées, affichage LCD I2C et LEDs d'état.</p>
+        <p class="project-desc"><strong>Problème résolu :</strong> J'ai conçu un prototype de distributeur qui sert trois types de boissons avec un système de validation tactile, résolvant les problèmes de dosage imprécis et d'hygiène dans les fontaines à boissons classiques.</p>
         <div class="project-tech"><span class="tag">Arduino</span><span class="tag">LCD I2C</span><span class="tag">C++</span></div>
-        <a href="LIEN_DRIVE_1" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
+        <a href="https://drive.google.com/file/d/XXXXX1/view" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
       </div>
       <div class="project-card glass-strong reveal" style="transition-delay:0.1s">
         <div class="project-tag">IoT Mobile</div>
         <div class="project-title">Smart Juice — App Android IoT</div>
-        <p class="project-desc">Application Android de contrôle de machine via Bluetooth HC-05 : interface dark mode, contrôle vocal et manuel, historique utilisateur.</p>
+        <p class="project-desc"><strong>Problème résolu :</strong> J'ai développé une application Android qui permet de contrôler une machine à jus à distance via Bluetooth, offrant une interface intuitive et un contrôle vocal pour simplifier l'expérience utilisateur.</p>
         <div class="project-tech"><span class="tag">AIDE</span><span class="tag">HC-05</span><span class="tag">Android</span></div>
-        <a href="LIEN_DRIVE_2" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
+        <a href="https://drive.google.com/file/d/XXXXX2/view" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
       </div>
       <div class="project-card glass-strong reveal" style="transition-delay:0.2s">
         <div class="project-tag">Robotique</div>
         <div class="project-title">Bras robotique 6 DOF</div>
-        <p class="project-desc">Bras articulé à 6 servomoteurs et pince de manipulation, contrôlé via application mobile. Expérimentation robotique et contrôle multi-axes.</p>
+        <p class="project-desc"><strong>Problème résolu :</strong> J'ai réalisé un bras articulé à 6 axes pour expérimenter le contrôle multi-axes et la manipulation précise, simulant des applications industrielles de pick-and-place.</p>
         <div class="project-tech"><span class="tag">Arduino</span><span class="tag">Servos</span><span class="tag">Mobile</span></div>
-        <a href="LIEN_DRIVE_3" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
+        <a href="https://drive.google.com/file/d/XXXXX3/view" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
       </div>
       <div class="project-card glass-strong reveal" style="transition-delay:0.3s">
         <div class="project-tag">Maison connectée</div>
         <div class="project-title">Gestion électrique IoT domestique</div>
-        <p class="project-desc">Système intelligent connecté via ESP8266 WiFi : contrôle d'appareils par relais, surveillance de tension et température, supervision à distance.</p>
+        <p class="project-desc"><strong>Problème résolu :</strong> J'ai conçu un système de supervision à distance pour surveiller la consommation électrique et contrôler les appareils, apportant une solution de gestion énergétique pour les foyers connectés.</p>
         <div class="project-tech"><span class="tag">ESP8266</span><span class="tag">WiFi</span><span class="tag">ZMPT101B</span></div>
-        <a href="LIEN_DRIVE_4" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
+        <a href="https://drive.google.com/file/d/XXXXX4/view" target="_blank" rel="noopener" class="project-link"><svg class="icon"><use href="#i-file"/></svg>Voir le PDF →</a>
       </div>
     </div>
   </section>
@@ -313,6 +360,18 @@
       <div class="contact-info contact-card glass">
         <h3>Restons en contact</h3>
         <p>Vous cherchez un profil créatif alliant hardware et software ? Je suis ouvert aux stages, collaborations et projets techniques.</p>
+
+        <!-- Liens sociaux -->
+        <div style="display: flex; gap: 12px; margin: 16px 0 20px 0; flex-wrap: wrap;">
+          <a href="https://github.com/natianah" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px; background: var(--glass-bg); border-radius: 30px; color: var(--text-primary); text-decoration: none; border: 1px solid var(--glass-border); transition: all 0.3s ease; font-size: 0.95rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/votreprofil" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px; background: var(--glass-bg); border-radius: 30px; color: var(--text-primary); text-decoration: none; border: 1px solid var(--glass-border); transition: all 0.3s ease; font-size: 0.95rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
 
         <a href="mailto:herytianarazafiniarivo@gmail.com" class="contact-item">
           <div class="contact-item-icon"><svg class="icon"><use href="#i-mail"/></svg></div>
