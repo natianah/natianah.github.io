@@ -97,17 +97,27 @@
   box-shadow: 0 0 0 3px var(--accent);
 }
 
-/* Animation de la photo de profil */
 .profile-ring {
   animation: spin 8s linear infinite;
+}
+
+/* Icône CV dans le bouton */
+.btn-icon {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+  flex-shrink: 0;
 }
 </style>
 
 </head>
 <body>
 
-<!-- ═══ SPRITE D'ICÔNES SVG ═══ -->
+<!-- Sprite SVG des icônes -->
 <svg style="display:none" aria-hidden="true">
+  <!-- Icônes existantes -->
   <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></symbol>
   <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
   <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/></symbol>
@@ -126,6 +136,10 @@
   <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 01-8.4 8.4 8.3 8.3 0 01-3.9-.96L3 21l1.94-5.62A8.4 8.4 0 1121 11.5z"/></symbol>
   <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></symbol>
   <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6M9 9h1"/></symbol>
+
+  <!-- Nouvelles icônes pour remplacer les émojis -->
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
 </svg>
 
 <div class="bg-blob blob1"></div>
@@ -158,7 +172,7 @@
 </div>
 
 <main>
-  <!-- ── HERO ── -->
+  <!-- ===== HERO ===== -->
   <section id="hero">
     <div class="hero-left">
       <div class="hero-badge"><span class="hero-badge-dot"></span>Disponible pour stages & opportunités</div>
@@ -175,7 +189,14 @@
       <div class="hero-cta">
         <a href="#projects" class="btn-primary">Voir mes projets</a>
         <a href="#contact" class="btn-glass">Me contacter</a>
-        <a href="LIEN_VERS_VOTRE_CV" target="_blank" rel="noopener noreferrer" class="btn-glass" style="border-color: var(--accent);">📄 Télécharger mon CV</a>
+        <a href="https://drive.google.com/file/d/12EHy3TyTNgXBNIiAgPR5y3SxIf6Hd4YI/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-glass" style="border-color: var(--accent); display: inline-flex; align-items: center; gap: 8px;">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Télécharger mon CV
+        </a>
       </div>
       <div class="scroll-hint">
         <div class="scroll-line"></div>
@@ -196,7 +217,7 @@
     </div>
   </section>
 
-  <!-- ── À PROPOS ── -->
+  <!-- ===== À PROPOS ===== -->
   <section id="about">
     <div class="section-eyebrow">À propos</div>
     <h2>Qui suis-je ?</h2>
@@ -238,7 +259,7 @@
     </div>
   </section>
 
-  <!-- ── FORMATION ── -->
+  <!-- ===== FORMATION ===== -->
   <section id="education">
     <div class="section-eyebrow">Parcours</div>
     <h2>Formation &amp; certifications</h2>
@@ -282,7 +303,7 @@
     </div>
   </section>
 
-  <!-- ── COMPÉTENCES ── -->
+  <!-- ===== COMPÉTENCES ===== -->
   <section id="skills">
     <div class="section-eyebrow">Compétences</div>
     <h2>Ce que je maîtrise</h2>
@@ -326,7 +347,7 @@
     </div>
   </section>
 
-  <!-- ── PROJETS ── -->
+  <!-- ===== PROJETS ===== -->
   <section id="projects">
     <div class="section-eyebrow">Projets</div>
     <h2>Mes réalisations</h2>
@@ -362,7 +383,7 @@
     </div>
   </section>
 
-  <!-- ── CONTACT ── -->
+  <!-- ===== CONTACT ===== -->
   <section id="contact">
     <div class="section-eyebrow">Contact</div>
     <h2>Travaillons ensemble</h2>
@@ -428,12 +449,12 @@
           </div>
           <input type="text" id="f-objet" placeholder="Objet du message" />
           <textarea id="f-msg" placeholder="Votre message..."></textarea>
-          
-          <!-- 🔒 Champ honeypot anti-spam (caché) -->
+
+          <!-- Champ honeypot anti-spam -->
           <div style="display: none;">
             <input type="text" id="f-honeypot" name="honeypot" placeholder="Ne pas remplir" />
           </div>
-          
+
           <button class="btn-primary btn-full" onclick="envoyerEmail()">
             <svg class="icon"><use href="#i-send"/></svg>Envoyer le message
           </button>

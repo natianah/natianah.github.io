@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Politique de confidentialité — Hery Tiana RAZAFINIARIVO</title>
+  <meta name="description" content="Politique de confidentialité du portfolio de Hery Tiana RAZAFINIARIVO — Aucune donnée personnelle n'est collectée.">
   <link rel="stylesheet" href="css/style.css">
   <style>
     body { 
@@ -14,53 +15,305 @@
       align-items: center;
       padding: 40px 20px;
       background: var(--bg-grad);
+      background-attachment: fixed;
       color: var(--text-primary);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     }
     .privacy-card {
-      max-width: 700px;
-      padding: 48px 40px;
+      max-width: 780px;
+      width: 100%;
+      padding: 48px 44px;
       border-radius: 32px;
       background: var(--bg-glass-strong);
-      backdrop-filter: blur(32px);
+      backdrop-filter: blur(32px) saturate(200%);
+      -webkit-backdrop-filter: blur(32px) saturate(200%);
       border: 1px solid var(--border-glass-strong);
       box-shadow: var(--shadow-glass), var(--shadow-glow);
+      transition: background 0.4s, border 0.4s;
     }
-    h1 { color: var(--accent); margin-bottom: 24px; }
-    h2 { font-size: 18px; margin-top: 24px; margin-bottom: 8px; }
-    p { line-height: 1.7; color: var(--text-secondary); }
-    ul { color: var(--text-secondary); padding-left: 24px; line-height: 1.7; }
-    .back-link { margin-top: 32px; display: inline-block; }
+    [data-theme="light"] .privacy-card {
+      background: var(--bg-glass-strong);
+      box-shadow: var(--shadow-glass), var(--shadow-glow);
+    }
+    .privacy-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 8px;
+    }
+    .privacy-header .icon {
+      width: 32px;
+      height: 32px;
+      color: var(--accent);
+      stroke-width: 1.8;
+    }
+    h1 {
+      font-size: clamp(28px, 4vw, 38px);
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -1px;
+      margin: 0;
+    }
+    .privacy-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-top: 28px;
+      margin-bottom: 8px;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .icon {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      flex-shrink: 0;
+    }
+    p {
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+    ul {
+      color: var(--text-secondary);
+      padding-left: 24px;
+      line-height: 1.8;
+      margin: 6px 0 10px 0;
+    }
+    ul li::marker {
+      color: var(--accent);
+    }
+    code {
+      background: var(--accent-dim);
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 13px;
+      color: var(--accent);
+      font-family: 'Courier New', monospace;
+    }
+    .highlight-box {
+      background: var(--accent-dim);
+      border-left: 3px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 0 12px 12px 0;
+      margin: 12px 0 16px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .highlight-box .icon {
+      width: 20px;
+      height: 20px;
+      color: var(--accent);
+      stroke-width: 2;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .highlight-box p {
+      margin: 0;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    .highlight-box strong {
+      color: var(--text-primary);
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 36px;
+      padding: 12px 28px;
+      border-radius: 50px;
+      background: var(--bg-glass);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-glass);
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.3s ease;
+    }
+    .back-link:hover {
+      border-color: var(--accent);
+      transform: translateX(-4px);
+    }
+    .back-link .icon {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+    }
+    .inline-link {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .inline-link:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .privacy-card { padding: 32px 24px; }
+      .privacy-header h1 { font-size: 24px; }
+      .highlight-box { flex-direction: column; gap: 6px; }
+    }
   </style>
 </head>
 <body>
   <div class="privacy-card glass-strong">
-    <h1>🔒 Politique de confidentialité</h1>
-    <p>Dernière mise à jour : <strong>2026</strong></p>
+    <div class="privacy-header">
+      <!-- Icône cadenas -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+        <path d="M7 11V7a5 5 0 0110 0v4"/>
+        <circle cx="12" cy="16" r="1.5"/>
+      </svg>
+      <h1>Politique de confidentialité</h1>
+    </div>
+    <div class="privacy-meta">
+      Dernière mise à jour : <strong>2026</strong> · Hery Tiana RAZAFINIARIVO
+    </div>
 
-    <h2>1. Collecte des données</h2>
-    <p>Ce site est un portfolio personnel statique. <strong>Aucune donnée personnelle n'est collectée, stockée ou transmise</strong> à des tiers via ce site.</p>
+    <!-- 1. Collecte des données -->
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+        <polyline points="22 4 12 14.01 9 11.01"/>
+      </svg>
+      Collecte des données
+    </h2>
+    <p>Ce site est un <strong>portfolio personnel statique</strong>. <strong>Aucune donnée personnelle</strong> n'est collectée, stockée ou transmise à des tiers via ce site.</p>
 
-    <h2>2. Formulaire de contact</h2>
+    <div class="highlight-box">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+        <polyline points="22 4 12 14.01 9 11.01"/>
+      </svg>
+      <p><strong>Aucun cookie · Aucun tracker · Aucune analyse comportementale · Aucune collecte automatisée</strong></p>
+    </div>
+
+    <!-- 2. Formulaire de contact -->
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2"/>
+        <path d="M2.5 6l9.5 7 9.5-7"/>
+      </svg>
+      Formulaire de contact
+    </h2>
     <p>Le formulaire de contact utilise la fonction <code>mailto:</code> de votre navigateur. Cela signifie que :</p>
     <ul>
-      <li>Aucune donnée n'est envoyée à un serveur.</li>
-      <li>Votre message est ouvert directement dans votre client email (Gmail, Outlook, etc.).</li>
-      <li>C'est votre client email qui gère la transmission de vos données.</li>
+      <li><strong>Aucune donnée</strong> n'est envoyée à un serveur intermédiaire.</li>
+      <li>Votre message est ouvert directement dans votre <strong>client email</strong> (Gmail, Outlook, Apple Mail, etc.).</li>
+      <li>C'est votre propre client email qui gère la <strong>transmission</strong> de vos données.</li>
+      <li>Je ne reçois vos données <strong>que lorsque vous m'envoyez le message</strong> depuis votre boîte mail.</li>
     </ul>
 
-    <h2>3. Cookies</h2>
-    <p>Ce site <strong>n'utilise aucun cookie</strong>, ni aucun outil de tracking ou d'analyse.</p>
+    <!-- 3. Cookies -->
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <circle cx="12" cy="8" r="0.5" fill="currentColor"/>
+        <circle cx="16" cy="12" r="0.5" fill="currentColor"/>
+        <circle cx="12" cy="16" r="0.5" fill="currentColor"/>
+        <circle cx="8" cy="12" r="0.5" fill="currentColor"/>
+      </svg>
+      Cookies
+    </h2>
+    <p>Ce site <strong>n'utilise aucun cookie</strong>, ni aucun outil de tracking ou d'analyse d'audience.</p>
+    <ul>
+      <li>Pas de cookies de session</li>
+      <li>Pas de cookies tiers</li>
+      <li>Pas de stockage local utilisé à des fins de tracking</li>
+    </ul>
 
-    <h2>4. Liens externes</h2>
-    <p>Ce site contient des liens vers des services tiers (GitHub, LinkedIn, WhatsApp). Ces services ont leurs propres politiques de confidentialité.</p>
+    <!-- 4. Liens externes -->
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+        <polyline points="15 3 21 3 21 9"/>
+        <line x1="10" y1="14" x2="21" y2="3"/>
+      </svg>
+      Liens externes
+    </h2>
+    <p>Ce site contient des liens vers des services tiers :</p>
+    <ul>
+      <li><strong>GitHub</strong> — <a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer" class="inline-link">Politique de confidentialité GitHub</a></li>
+      <li><strong>LinkedIn</strong> — <a href="https://fr.linkedin.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" class="inline-link">Politique de confidentialité LinkedIn</a></li>
+      <li><strong>WhatsApp (Meta)</strong> — <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" class="inline-link">Politique de confidentialité WhatsApp</a></li>
+      <li><strong>Google Drive</strong> — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="inline-link">Politique de confidentialité Google</a></li>
+    </ul>
+    <p style="margin-top: 6px;">Ces services ont leurs propres politiques de confidentialité que je vous invite à consulter.</p>
 
-    <h2>5. Vos droits</h2>
-    <p>Si vous me contactez, vous pouvez à tout moment me demander de supprimer vos données personnelles (email, nom).</p>
+    <!-- 5. Vos droits -->
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4l16 16"/>
+        <path d="M20 4L4 20"/>
+        <rect x="2" y="2" width="20" height="20" rx="2.5"/>
+      </svg>
+      Vos droits (RGPD &amp; Loi 2018-348)
+    </h2>
+    <p>Conformément au <strong>RGPD</strong> (Règlement Général sur la Protection des Données) et à la loi malgache n°2018-348 sur la protection des données à caractère personnel, vous disposez des droits suivants :</p>
+    <ul>
+      <li><strong>Droit d'accès</strong> : vous pouvez me demander quelles données je détiens à votre sujet.</li>
+      <li><strong>Droit de rectification</strong> : vous pouvez me demander de corriger des données inexactes.</li>
+      <li><strong>Droit à l'effacement</strong> : vous pouvez me demander de supprimer vos données personnelles (email, nom, message).</li>
+      <li><strong>Droit d'opposition</strong> : vous pouvez vous opposer au traitement de vos données.</li>
+    </ul>
+    <div class="highlight-box">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 2L11 13"/>
+        <path d="M22 2l-7 20-4-9-9-4z"/>
+      </svg>
+      <p><strong>Pour exercer vos droits</strong> : il vous suffit de me contacter via le <a href="/#contact" class="inline-link">formulaire du portfolio</a> ou directement par email à <strong>herytianarazafiniarivo@gmail.com</strong>. Je m'engage à répondre sous 30 jours.</p>
+    </div>
 
-    <h2>6. Contact</h2>
-    <p>Pour toute question, vous pouvez me contacter via le <a href="/" style="color: var(--accent);">formulaire du portfolio</a> ou directement à : <strong>herytianarazafiniarivo@gmail.com</strong></p>
+    <!-- 6. Sécurité -->
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        <polyline points="9 12 11 14 15 10"/>
+      </svg>
+      Sécurité
+    </h2>
+    <p>Bien que ce site ne collecte aucune donnée, des mesures de sécurité sont mises en place :</p>
+    <ul>
+      <li><strong>HTTPS</strong> : toutes les communications sont chiffrées via un certificat SSL/TLS.</li>
+      <li><strong>Protection anti-spam</strong> : un champ honeypot est présent sur le formulaire pour bloquer les robots.</li>
+      <li><strong>En-têtes de sécurité</strong> : X-Content-Type-Options, X-Frame-Options, X-XSS-Protection sont activés.</li>
+    </ul>
 
-    <a href="/" class="back-link btn-glass" style="padding: 12px 24px; border-radius: 50px; text-decoration: none; display: inline-block;">← Retour au portfolio</a>
+    <!-- 7. Contact -->
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+      </svg>
+      Contact
+    </h2>
+    <p>Pour toute question relative à cette politique de confidentialité, vous pouvez me contacter :</p>
+    <ul>
+      <li><strong>Email</strong> : <a href="mailto:herytianarazafiniarivo@gmail.com" class="inline-link">herytianarazafiniarivo@gmail.com</a></li>
+      <li><strong>Téléphone</strong> : <a href="https://wa.me/261327353371" target="_blank" rel="noopener noreferrer" class="inline-link">+261 32 73 533 71</a></li>
+      <li><strong>Formulaire</strong> : <a href="/#contact" class="inline-link">Page de contact du portfolio</a></li>
+    </ul>
+
+    <!-- Lien retour -->
+    <a href="/" class="back-link">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      Retour au portfolio
+    </a>
   </div>
 </body>
 </html>
