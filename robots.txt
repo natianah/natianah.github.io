@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://protfolio-natianah.vercel.app/sitemap.xml
